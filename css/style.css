@@ -1,0 +1,72 @@
+:root {
+  --dark-blue: #006d77;
+  --light-blue: #83c5be;
+  --lighter-blue: #edf6f9;
+  --light-orange: #ffddd2;
+  --dark-orange: #e29578;
+  --white: #ffffff;
+}
+
+/* default and reset */
+body {
+  background-color: var(--lighter-blue);
+  font-family: "Nunito";
+  font-size: 1rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+#navbar,
+#main-content,
+#footer-content {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+
+nav,
+nav a {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  display: flex;
+}
+
+nav #logo-name {
+  font-family: "Satisfy";
+  font-size: 2.6rem;
+  margin: 0.6rem 1rem;
+}
+
+nav ul.navbar-align {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  padding: 0.5rem;
+  margin-left: auto;
+}
+
+nav ul.navbar-align li {
+  padding: 0.4rem;
+}
+
+/* Content */
+
+#work {
+  background-color: var(--light-blue);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-orange);
+  text-align: center;
+  color: var(--white);
+  padding: 1rem 0;
+}
