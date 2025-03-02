@@ -1,72 +1,128 @@
 :root {
-  --dark-blue: #006d77;
-  --light-blue: #83c5be;
-  --lighter-blue: #edf6f9;
-  --light-orange: #ffddd2;
-  --dark-orange: #e29578;
+  --dark-green: #a4b8ac;
+  --light-green: #dce1da;
+  --dark-pink: #ecb7b3;
+  --light-pink: #f4ddd5;
+  --medium-blue: #85bac0;
+  --medium-orange: #f7a97b;
+  --grey: #8e929b;
   --white: #ffffff;
+  --darker-white: #f7f7f7;
+  --default-font: "Lato";
+  --title-font: "Amandine";
+  --no-margin: "margin:0";
 }
 
 /* default and reset */
 body {
-  background-color: var(--lighter-blue);
-  font-family: "Nunito";
+  background-color: var(--light-green);
+  font-family: sans-serif;
+  font-family: var(--default-font);
   font-size: 1rem;
   margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 0;
-}
-
-#navbar,
-#main-content,
-#footer-content {
-  max-width: 1160px;
-  margin: 0 auto;
-}
-
-/* Navigation */
-
-nav,
-nav a {
-  background-color: var(--dark-blue);
-  color: var(--white);
   display: flex;
+  box-sizing: border-box;
+  color: var(--grey);
+  /* background-image: url("../assets/stock-vector-wave-seamless-background-557959153.jpg"); */
 }
 
-nav #logo-name {
-  font-family: "Satisfy";
-  font-size: 2.6rem;
-  margin: 0.6rem 1rem;
+h1,
+p,
+ul {
+  margin: var(--no-margin);
+  padding: 0;
+}
+button {
+  border: 0;
 }
 
-nav ul.navbar-align {
+div#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container {
+  /* background-color: rgba(247, 247, 247, 0.3); */
+  background-color: var(--darker-white);
+  width: min(800px, 90%);
+  min-height: 600px;
+  border-radius: 30px;
+  padding: 2rem;
+  backdrop-filter: blur(6px);
+}
+
+div.container:hover {
+  background-color: var(--darker-white);
+  box-shadow: 12px 12px 12px 5px #000000, -10px -10px -10px var(--white);
+  /* transition: background 0.5s ease-out;
+  -moz-transition: background 0.5s ease-out;
+  -webkit-transition: background 0.5s ease-out;
+  -o-transition: background 0.5s ease-out; */
+}
+
+div h1 {
+  font-family: sans-serif;
+  font-family: var(--title-font);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+div p:first-child {
+  margin-bottom: 10px;
+}
+
+div ul#contact-buttons {
+  list-style-type: none;
+  margin: 55px 0 0 0;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   display: flex;
-  list-style-type: none;
-  padding: 0.5rem;
-  margin-left: auto;
 }
 
-nav ul.navbar-align li {
-  padding: 0.4rem;
-}
+div ul#contact-buttons li {
+  width: 280px;
+  height: 65px;
+  border-radius: 18px;
+  display: inline-block;
 
-/* Content */
-
-#work {
-  background-color: var(--light-blue);
-}
-
-/* Footer */
-footer {
-  background-color: var(--dark-orange);
   text-align: center;
-  color: var(--white);
-  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div ul#contact-buttons li a {
+  color: var(--darker-white);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+span.btn-icons {
+  display: inline-flex;
+  width: 21px;
+  height: 100%;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.btn-pink {
+  background-color: var(--dark-pink);
+}
+
+.btn-blue {
+  background-color: var(--medium-blue);
+}
+
+.btn-green {
+  background-color: var(--dark-green);
+}
+
+.btn-orange {
+  background-color: var(--medium-orange);
 }
